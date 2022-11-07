@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Work+Sans:wght@300;400&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Style */
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #747474;
+  padding: 70px 0 0 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ababab;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+p {
+  text-align: justify;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 -2px 10px;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1015px;
+  margin: auto;
+}
+.current {
+  color: #00b39b;
+}
+
+.btn {
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #fff;
+}
+
+.navbar .logo {
+  height: 33px;
+  width: 268px;
+}
+
+.navbar .main-nav {
+  display: flex;
+}
+
+.navbar .main-nav a {
+  padding: 0 9px;
+}
+
+.navbar .main-nav a:hover {
+  color: #00b39b;
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 220px;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  right: 0;
+}
+
+.navbar .dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Offices */
+
+.offices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.offices .card {
+  border: 1px solid rgb(252, 252, 252);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.offices .card:hover {
+  box-shadow: 0 5px 20px 10px #ececec;
+}
+
+.offices .card img {
+  width: 100%;
+}
+
+.offices .card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
